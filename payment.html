@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/pay.css" />
+    <link rel="icon" href="img/logo-.png" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>IngeTin | Home</title>
+  </head>
+  <body>
+    <!-- start navbar -->
+    <nav class="bg-custom navbar navbar-expand-md navbar-light">
+      <div class="container">
+        <a href="#" class="navbar-custom mb-1">
+          <img src="img/logo.png" alt="#" class="d-inline-block" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarin">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarin">
+          <ul class="navbar-nav ms-auto me-auto">
+            <li class="nav-item me-md-3">
+              <a class="btn btn-custom shadow-sm" href="home.html">Home</a>
+            </li>
+            <li class="nav-item me-md-3">
+              <a class="btn btn-custom shadow-sm" href="daftar_blokir.html">Daftar Blokir</a>
+            </li>
+            <li class="nav-item me-md-3">
+              <a class="btn btn-custom shadow-sm" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="btn btn-danger shadow-sm" href="Login2.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex text-right d-lg-block d-none">
+          <a class="btn btn-danger shadow-sm" href="login2.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- showcase -->
+    <section class="kegiatan">
+      <div class="container">
+        <img src="img/garistg.png" class="img-fluid" alt="..." style="margin-left:570px; margin-top: 20px; width:10px ;height:380px;">
+        <div class="row">
+          <div class="picture col-6">
+            <section id="paymen">
+              <div class="colom" style="margin-top: -300px ;">
+                <div class="col-1">
+                <div class="kotak-kg col-5 mt-2 mb-2 rounded">
+                <div class="text-kt">
+                  <div class="row m-1">
+                  <label for="30k" class="text-kotak">Orang Kaya</label>
+                  </div>
+                  <div class="row justify-content-between align-items-center text-center">
+                  <label for="30k" class="col text-kotak2">Rp.30.000</label>
+                  <div class="col">
+                     <input class="form-check-input h2" type="radio" id="30k" name="posradio1" checked/>
+                  </div>
+                  </div>
+                </div>
+            </div>
+                </div>
+                <div class="col-1">
+                    <div class="kotak-kg col-5 mt-2 mb-2 rounded">
+                    <div class="text-kt">
+                      <div class="row m-1">
+                      <label for="50k" class="text-kotak">Borju</label>
+                      </div>
+                      <div class="row justify-content-between align-items-center text-center">
+                      <label for="50k" class="col text-kotak2">Rp. 50.000</label>
+                      <div class="col">
+                          <input class="form-check-input h2" type="radio" id="50k" name="posradio1" />
+                      </div>
+                      </div>
+                    </div>
+                    </div>
+              </div>
+              <div class="col-1">
+                <div class="kotak-kg col-5 mt-2 mb-2 rounded">
+                  <div class="text-kt">
+                    <div class="row m-1">
+                    <label for="cusk" class="text-kotak">Sultan</label>
+                    </div>
+                    <div class="row justify-content-between align-items-center text-center">
+                      <div class="col-2"></div>
+                      <div class="col-5 ms-4">
+                      <label for="cusk"><input type="number" min="60000" step="5000" id="custom-value" class="form-control btn-custom mb-2" placeholder="Custom"/></label>
+                    </div>
+                    <div class="col">
+                        <input class="form-check-input h2" type="radio" id="cusk" name="posradio1" />
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+            </section>
+          </div>
+          
+          <div class="row col-6">
+            <div class="container">
+                
+                <div class="mb-3">
+                  <div class="judul text-center fs-3 fw-bold" style="margin-top: -390px; margin-left: -150px; " >
+                    <p>Metode Pembayaran</p>
+                    <img src="img/garis.png" class="img-fluid" style="margin-top: -80px;width:340px; height: 12px; margin-right: -10px;" />
+                </div>
+                <div class="pembayar">
+                <div class="d-flex mb-3 align-items-center">
+                    <img src="img/bri.png" class="img-fluid "style="width: 250px; margin-left: 20px; height: 80px; margin-bottom: -10px;" />
+                    <div class="col-2"></div>
+                    <input class=" col-2 mt-3 form-check-input h2" type="radio" id="indomaret" name="radiopay" />
+                </div>
+                <div class="d-flex mb-3 align-items-center">
+                    <img src="img/indomaret.png" class="img-fluid "style="width: 250px; margin-left: 20px; height: 80px; margin-bottom: -10px;" />
+                    <div class="col-2"></div>
+                    <input class=" col-2 mt-3 form-check-input h2" type="radio" id="indomaret" name="radiopay" />
+                </div>
+                <div class="d-flex mb-3 align-items-center">
+                    <img src="img/dana.png" class="col-5 img-fluid" style=" width: 250px; margin-left: 20px; height: 80px; margin-bottom: -10px; "/>
+                    <div class="col-2"></div>
+                    <input class=" col-2 mt-3 form-check-input h2" type="radio" id="dana" name="radiopay" />
+                </div>
+                <div class="d-flex mb-3 align-items-center">
+                    <img src="img/mandiri.png" class="img-fluid" style=" width: 250px; margin-left: 20px; height: 80px;" />
+                    <div class="col-2"></div>
+                    <input class=" col-2 mt-3 form-check-input h2" type="radio" id="mandiri" name="radiopay" />
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="kegiatan">
+    <div class="coba d-flex justify-content-center">
+      
+        <a class="btn btn-danger btn-lg shadow-sm me-3 col-3" style="margin-left:50px; " href="profile.html">Cancel</a>
+        <a class="btn btn-success btn-lg shadow-sm me-3 col-3 fst-normal" href="profile.html">Pay</a>
+      </div>
+    </section>
+    <!-- Footer -->
+    <div class="m-5"></div>
+    <footer class="bg-customer text-center align-items-center p-3">
+      <p class="m-1">Created by Ingetin</p>
+    </footer>
+    <!-- end footer -->
+  </body>
+</html>

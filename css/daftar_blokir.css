@@ -1,0 +1,80 @@
+body {
+  font-family: "popins", sans-serif;
+  background-color: #e9e9e9;
+}
+nav {
+  z-index: 1000;
+  cursor: pointer;
+}
+nav ul li {
+  width: 175px;
+}
+nav ul li a {
+  width: 150px;
+}
+.bg-custom {
+  background-color: #dde0ff;
+}
+.btn-custom {
+  background-color: #e9e9e9;
+  color: #010101;
+  /* padding: 5px 25px 5px 25px; */
+}
+.btn-custom.active {
+  background-color: #b8ccff;
+  color: #010101;
+}
+.btn-custom:hover {
+  color: #fff;
+  background-color: #5c636a;
+  border-color: #565e64;
+}
+.navbar-custom img {
+  height: 70px;
+}
+
+.kotak-kg {
+  background-color: #92cbe3;
+}
+
+.blkg {
+  background-color: #b8ccff;
+}
+
+.p-5 p {
+  text-align: center;
+}
+.p-5 {
+  background-color: #92cbe3;
+}
+.bi-search {
+  z-index: 1;
+}
+.kegiatan {
+  background-color: black;
+}
+.blkg2 {
+  background-color: #b8ccff;
+  border-radius: 10px;
+}
+.bg-customer {
+  background-color: #92cbe3;
+}
+.col-1 {
+  margin-left: 60px;
+  margin-right: 100px;
+  font-size: 28pt;
+}
+.col-2 {
+  color: #ff1515;
+  font-size: 28pt;
+}
+.kuning {
+  margin-left: 60px;
+  color: yellow;
+  font-size: 28pt;
+}
+.hijau {
+  color: #61ff00;
+  font-size: 28pt;
+}

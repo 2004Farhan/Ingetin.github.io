@@ -1,0 +1,41 @@
+.profil-custom img {
+  margin-left: 250px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+
+.profil-custom button {
+  margin-left: 280px;
+}
+.bton-custom:hover {
+  background-color: #a81e0b;
+  border-color: #a81e0b;
+}
+.btong-prem:hover {
+  background-color: #a81e0b;
+  border-color: #a81e0b;
+}
+
+.bord-tom {
+  margin-top: 20px;
+  margin-right: 210px;
+  margin-bottom: 10px;
+}
+
+.btong-prem {
+  margin-left: -13px;
+  width: 380px;
+  height: 65px;
+  margin-bottom: 10px;
+}
+.cont-custom {
+  margin-top: 50px;
+}
+
+.bg-drop {
+  background-color: #f2f2f2;
+}
+.btong-prem img {
+  width: 30px;
+  margin-left: 15px;
+}

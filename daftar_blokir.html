@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/daftar_blokir.css" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="img/logo-.png" />
+    <title>IngeTin | Daftar Blokir</title>
+  </head>
+  <body>
+    <!-- start navbar -->
+    <nav class="bg-custom navbar navbar-expand-md navbar-light">
+      <div class="container">
+        <a href="#" class="navbar-custom mb-1">
+          <img src="img/logo.png" alt="#" class="d-inline-block" href="home.html" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarin">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarin">
+          <ul class="navbar-nav ms-auto me-auto">
+            <li class="nav-item me-md-3">
+              <a class="btn btn-custom shadow-sm" href="home.html">Home</a>
+            </li>
+            <li class="nav-item me-md-3">
+              <a class="btn btn-custom active shadow-sm" href="daftar_blokir.html">Daftar Blokir</a>
+            </li>
+            <li class="nav-item me-md-3">
+              <a class="btn btn-custom shadow-sm" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="btn btn-custom shadow-sm" href="login2.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex text-right d-lg-block d-none">
+          <a class="btn btn-danger shadow-sm" href="login2.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- showcase -->
+    <section class="showcase shadow-sm">
+      <div class="container">
+        <nav class="navbar navbar-light bg-none">
+          <div class="mt-2 mb-2">
+            <div class="d-flex">
+              <button class="btn btn-custom active shadow-lg me-3" href="#">Blokir 1</button>
+              <button class="btn btn-custom grey shadow-sm me-3" href="#">Blokir 2</button>
+              <button class="btn btn-custom grey shadow-sm me-3" href="#">+</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <section class="showcase shadow-sm">
+      <div class="container">
+        <nav class="navbar navbar-light bg-none">
+          <div class="mt-2 mb-2">
+            <div class="d-flex">
+              <div class="input-group col-5 shadow-sm me-3">
+                <span class="input-group-text"><i class="bi bi-search"></i></span>
+                <input class="form-control form-control-lg" type="search" placeholder="Cari Aplikasi" aria-label="Search" />
+              </div>
+              <button class="btn btn-outline-success btn-lg shadow-sm me-3" type="submit">Search</button>
+              <button class="btn btn-outline-secondary btn-lg shadow-sm me-3" href="#" data-bs-toggle="modal" data-bs-target="#actionModal">Action</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- end showcase -->
+
+    <!-- kegiatan -->
+    <section class="container blkg2 mt-3 mb-3">
+      <div class="container mt-3 mb-3">
+        <div class="d-flex blkg text-center align-items-center rounded">
+          <div class="col-1">
+            <p>Aplikasi</p>
+            <i class="bi bi-whatsapp"></i>
+          </div>
+          <div class="col-2">
+            <p>Blokir</p>
+            <div class="radio">
+              <label><input class="form-check-input blokir h2" type="radio" name="posradio1" /></label>
+            </div>
+          </div>
+          <div class="kuning col-3">
+            <p>Suspend</p>
+            <div class="radio">
+              <label><input class="form-check-input suspend h2" type="radio" name="posradio1" /></label>
+            </div>
+          </div>
+          <div class="hijau col-4">
+            <p>Disable</p>
+            <div class="radio">
+              <label><input class="form-check-input disable h2" type="radio" name="posradio1" checked /></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3 mb-3">
+        <div class="d-flex blkg text-center align-items-center rounded">
+          <div class="col-1">
+            <i class="bi bi-line"></i>
+          </div>
+          <div class="col-2">
+            <div class="radio h3">
+              <label><input class="form-check-input blokir h2" type="radio" name="posradio2" /></label>
+            </div>
+          </div>
+          <div class="kuning col-3">
+            <div class="radio">
+              <label><input class="form-check-input suspend h2" type="radio" name="posradio2" /></label>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="radio">
+              <label><input class="form-check-input disable h2" type="radio" name="posradio2" checked /></label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3 mb-3">
+        <div class="d-flex blkg text-center align-items-center rounded">
+          <div class="col-1">
+            <i class="bi bi-telegram"></i>
+          </div>
+          <div class="col-2">
+            <div class="radio">
+              <label><input class="form-check-input blokir h2" type="radio" name="posradio3" /></label>
+            </div>
+          </div>
+          <div class="kuning col-3">
+            <div class="radio">
+              <label><input class="form-check-input suspend h2" type="radio" name="posradio3" /></label>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="radio">
+              <label><input class="form-check-input disable h2" type="radio" name="posradio3" checked /></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="m-5"></div>
+    <footer class="bg-customer text-center align-items-center p-3">
+      <p class="m-1">Created by Ingetin</p>
+    </footer>
+    <!-- modal -->
+    <div class="modal fade" id="actionModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="actionModalLabel">Pilih Aksi</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="d-flex modal-body justify-content-between">
+            <button type="button" id="blockAll" class="btn btn-warning col-3" data-bs-dismiss="modal">Block All</button>
+            <button type="button" id="susAll" class="btn btn-warning col-3" data-bs-dismiss="modal">Suspend All</button>
+            <button type="button" id="disAll" class="btn btn-warning col-3" data-bs-dismiss="modal">Disable All</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+    <script>
+      $("#blockAll").click(function () {
+        const boxes = document.querySelectorAll(".form-check-input.blokir");
+        boxes.forEach((box) => {
+          box.checked = true;
+        });
+      });
+      $("#susAll").click(function () {
+        const boxes = document.querySelectorAll(".form-check-input.suspend");
+        boxes.forEach((box) => {
+          box.checked = true;
+        });
+      });
+      $("#disAll").click(function () {
+        const boxes = document.querySelectorAll(".form-check-input.disable");
+        boxes.forEach((box) => {
+          box.checked = true;
+        });
+      });
+    </script>
+  </body>
+</html>

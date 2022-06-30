@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/tambah.css" />
+    <link rel="icon" href="img/logo-.png" />
+    <title>IngeTin | Home</title>
+  </head>
+  <body>
+    <!-- start navbar -->
+    <nav class="bg-custom navbar navbar-expand-md navbar-light">
+      <div class="container">
+        <a href="#" class="navbar-custom mb-1">
+          <img src="img/logo.png" alt="#" class="d-inline-block" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarin">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarin">
+          <ul class="navbar-nav ms-auto me-auto">
+            <li class="nav-item me-md-3">
+              <a class="btn btn-custom shadow-sm" href="home.html">Home</a>
+            </li>
+            <li class="nav-item me-md-3">
+              <a class="btn btn-custom shadow-sm" href="daftar_blokir.html">Daftar Blokir</a>
+            </li>
+            <li class="nav-item me-md-3">
+              <a class="btn btn-custom shadow-sm" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="btn btn-custom shadow-sm" href="login2.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex text-right d-lg-block d-none">
+          <a class="btn btn-danger shadow-sm" href="login2.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- judul Kegiatan -->
+    <section class="judul shadow-sm">
+      <div class="container">
+        <nav class="navbar navbar-light bg-none">
+          <div class="mt-2 mb-2">
+            <div class="d-flex align-items-center">
+              <div class="col-1 me-3">
+                <button id="check-done" class="h1 bg-transparent border-0"><i class="bi bi-check-circle-fill"></i></button>
+              </div>
+              <input class="form-control text-center form-control-lg bg-custom col-5 me-3" id="nama-kegiatan" type="text" placeholder="Nama Kegiatan" />
+              <button class="btn btn-danger btn-lg shadow-sm me-3 col-3" data-toggle="modal" data-target="#confirm-delete">Delete</button>
+              <a class="btn btn-success btn-lg shadow-sm me-3 col-3 fst-normal" href="home.html">Done</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!-- end judul Kegiatan -->
+
+    <!-- edit kegiatan -->
+    <section class="edit-kegiatan">
+      <div class="container">
+        <div class="d-flex cols-11 m-3">
+          <div class="col mt-5 me-5">
+            <div class="row justify-content-between mb-3">
+              <div class="col bg-custom rounded shadow me-2">
+                <div class="d-flex justify-content-center align-items-center" style="height: 79px">
+                  <div class="btn-group col">
+                    <button class="btn btn-secondary me-2" style="height: 50%" data-bs-toggle="dropdown">Pengingat</button>
+                    <ul class="dropdown-menu bg-drop">
+                      <li>
+                        <div class="form-check form-switch m-1">
+                          <label class="form-check-label" for="alarm">Alarm</label>
+                          <input class="form-check-input dropdown-item" name="pengingat" type="radio" id="alarm" checked />
+                        </div>
+                      </li>
+                      <li>
+                        <div class="form-check form-switch m-1">
+                          <label class="form-check-label" for="notifikasi">Notifikasi</label>
+                          <input class="form-check-input dropdown-item" name="pengingat" type="radio" id="notifikasi" />
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- <button class="col btn btn-secondary" style="height: 50%">20:28</button> -->
+                </div>
+              </div>
+              <div class="col bg-custom rounded shadow">
+                <div class="d-flex justify-content-center align-items-center" style="height: 79px">
+                  <!-- <button class="col btn btn-secondary" style="height: 50%">Sabtu, 12-Agustus-2021</button> -->
+                  <input class="col btn btn-secondary" id="date-setting" type="datetime-local" style="height: 50%" />
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center bg-custom align-items-center shadow rounded mb-3">
+              <div class="col m-3">
+                <div class="form-check">
+                  <input class="form-check-input h3" type="radio" name="formRadio" id="noneRadio" checked />
+                  <label class="form-check-label h4 ms-2 mt-2" for="noneRadio">Tanpa Perulangan</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input h3" type="radio" name="formRadio" id="harianRadio" />
+                  <label class="form-check-label h4 ms-2 mt-2" for="harianRadio">Harian</label>
+                </div>
+              </div>
+              <div class="col m-3">
+                <div class="form-check">
+                  <input class="form-check-input h3" type="radio" name="formRadio" id="mingguanRadio" />
+                  <label class="form-check-label h4 ms-2 mt-2" for="mingguanRadio"> Mingguan</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input h3" type="radio" name="formRadio" id="bulananRadio" />
+                  <label class="form-check-label h4 ms-2 mt-2" for="bulananRadio"> Bulanan</label>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center bg-custom text-center align-items-center shadow rounded">
+              <!-- <div class="dropdown m-3">
+                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownTemplate" data-bs-toggle="dropdown" data-bs-target="#template">Template Blokir</button>
+                <ul class="dropdown-menu dropdown-menu-dark" id="template">
+                  <li><a class="dropdown-item active" href="#">Disable</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Blokir 1</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Blokir 2</a></li>
+                </ul>
+              </div> -->
+              <div class="m-4">
+                <select class="form-select btn-secondary form-select-md">
+                  <option selected>Template Blokir</option>
+                  <option value="0">Disable</option>
+                  <option value="1">Blokir 1</option>
+                  <option value="2">Blokir 2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row col-4 text-center">
+            <h4 class="text-decoration-underline">Catatan Kegiatan</h4>
+            <div class="bg-c2 rounded-3 m-2">
+              <div class="row justify-content-end">
+                <button id="edit-text" class="h2 bi bi-pencil-square col-2 bg-transparent border-0 text-primary"></button>
+              </div>
+              <div class="form-floating m-2">
+                <textarea class="form-control text-center bg-custom" placeholder="Tambah Catatan..." id="text-area" disabled></textarea>
+                <label for="text-area">Catatan</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end edit kegiatan -->
+
+    <!-- Footer -->
+    <footer class="bg-customer text-center align-items-center p-3">
+      <p class="m-1">Created by Ingetin</p>
+    </footer>
+    <!-- end Footer -->
+
+    <!-- modal -->
+    <div class="modal fade" id="confirm-delete" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Delete Confirmation</h3>
+          </div>
+          <div class="modal-body">
+            <p>Apakah Anda yakin Akan Menghapus?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <a class="btn btn-danger btn-ok" href="home.html">Delete</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal end -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script>
+      $("#date-setting").ready(function () {
+        var today = new Date();
+        var date = today.toISOString().split(".")[0].slice(0, -3);
+        $("#date-setting").val(date);
+        $("#date-setting").attr("min", date);
+      });
+      $("button#check-done").click(function () {
+        $(this).toggleClass("text-primary");
+      });
+      $("button#edit-text").click(function () {
+        $("#text-area").prop("disabled", function (i, v) {
+          return !v;
+        });
+        $(this).toggleClass("text-primary");
+      });
+    </script>
+  </body>
+</html>

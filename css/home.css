@@ -1,0 +1,73 @@
+body {
+  font-family: "popins", sans-serif;
+  background-color: #e9e9e9;
+}
+
+nav {
+  z-index: 1000;
+  cursor: pointer;
+  overflow: hidden;
+}
+nav ul li {
+  width: 175px;
+}
+nav ul li a {
+  width: 150px;
+}
+.bg-custom {
+  background-color: #dde0ff;
+}
+.btn-custom {
+  background-color: #e9e9e9;
+  color: #010101;
+  /* padding: 5px 25px 5px 25px; */
+}
+.btn-custom.active {
+  background-color: #b8ccff;
+  color: #010101;
+}
+.btn-custom.lebar {
+  background-color: #587eba;
+  width: 50%;
+}
+.btn-custom:hover {
+  color: #fff;
+  background-color: #5c636a;
+  border-color: #565e64;
+}
+.navbar-custom img {
+  height: 70px;
+}
+
+.kotak-kg {
+  background-color: #92cbe3;
+}
+
+.blkg {
+  background-color: #b8ccff;
+}
+
+.p-5 p {
+  text-align: center;
+}
+.p-5 {
+  background-color: #92cbe3;
+}
+.bi-search {
+  z-index: 1;
+}
+.kotak-kg:hover {
+  color: #fff;
+  background-color: #eeaadd;
+  border-color: #565e64;
+}
+.ngambang {
+  z-index: 999;
+  bottom: 35px;
+  position: fixed;
+  left: 20%;
+  right: 20%;
+}
+.bg-customer {
+  background-color: #92cbe3;
+}
